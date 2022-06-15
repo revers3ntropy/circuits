@@ -171,7 +171,7 @@
 		dragStart = dragEnd;
 	}
 
-	function select(event) {
+	function select (event) {
 		const startPosWorld = screenSpaceToWorldSpace(selectStart, camPos_v, width_v, height_v, zoom_v);
 		const currentPosWorld = screenSpaceToWorldSpace(
 				getMousePos(canvas_v, event),

@@ -3,8 +3,6 @@ import {rect} from "./drawing";
 import {atFunction, squareSize} from "./game";
 import {Component, componentTypeToClass, ct} from "./components";
 
-ct.custom = 4;
-
 export class CustomComponentType {
     id: number;
     components: Component[];

@@ -1,7 +1,7 @@
 import './powerLoop';
 
 import App from './App.svelte';
-import {Component} from "./components";
+import { Component } from "./components";
 
 function save (data: {components: Component[]}) {
 	localStorage.setItem('circuitData', JSON.stringify(data));

@@ -1,5 +1,10 @@
 README.md
 package-lock.json
-node_modules/
-/dist/
+node_modules
+/public/build/
 /.idea/
+/scripts/build/sshPass.txt
+sshPass.txt
+/public/bundle.css
+/public/bundle.js
+/public/bundle.js.map

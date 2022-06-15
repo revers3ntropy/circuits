@@ -7,16 +7,16 @@ import {arrow, circle, rect} from "./drawing";
 
 export type componentTypes = number;
 
-export const ct = {
-	wire: 0,
-	light: 1,
-	power: 2,
-	switch: 3,
-	not: 4,
-	custom: 5,
-	delay: 6,
-	clock: 7,
-};
+export enum ct {
+	wire,
+	light ,
+	power,
+	switch,
+	not,
+	custom,
+	delay,
+	clock,
+}
 
 export abstract class Component {
 	position: v2;
@@ -63,8 +63,6 @@ export abstract class Component {
 
 	public abstract draw: (at: v2, props: any) => void;
 }
-
-
 
 export class Wire extends Component {
 	to: v2;

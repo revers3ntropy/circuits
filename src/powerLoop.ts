@@ -1,5 +1,5 @@
-import {componentAt, components as components_} from "./game";
-import type {Component} from "./components";
+import { componentAt, components as components_ } from "./game";
+import type { Component } from "./components";
 
 let components: Component[] = [];
 components_.subscribe(v => components = v);
@@ -43,4 +43,5 @@ function loop () {
 
 	requestAnimationFrame(loop);
 }
+
 requestAnimationFrame(loop);
