@@ -25,8 +25,7 @@ async function uploadFrontend () {
 async function main () {
 	const start = now();
 
-	await $`rollup -c`;
-	await $`npm run play`;
+	await $`npm run build`;
 
 	await uploadFrontend();
 
